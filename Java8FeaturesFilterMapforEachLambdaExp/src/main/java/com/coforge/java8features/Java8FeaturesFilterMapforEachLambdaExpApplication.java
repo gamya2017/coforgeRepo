@@ -33,7 +33,7 @@ public class Java8FeaturesFilterMapforEachLambdaExpApplication {
 
 		System.out.println("Mapped Numbers : " + mappedNumbers);
 
-		// forEach is used to print each number in the list using lambda expression
+		// forEach method is used to print each number in the list using lambda expression
 
 		numbers.forEach(num -> System.out.println("Number :" + num));
 

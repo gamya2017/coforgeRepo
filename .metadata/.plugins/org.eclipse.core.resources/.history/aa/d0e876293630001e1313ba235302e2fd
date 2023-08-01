@@ -1,0 +1,13 @@
+package com.coforge.charactercount;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CharacterCountApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CharacterCountApplication.class, args);
+	}
+
+}

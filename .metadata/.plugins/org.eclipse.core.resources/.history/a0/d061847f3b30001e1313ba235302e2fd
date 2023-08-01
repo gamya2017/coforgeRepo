@@ -1,0 +1,39 @@
+package com.coforge.firstRepeatingChar;
+
+
+import java.util.HashSet;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FirstRepeatingCharApplication {
+
+	// This function prints the first repeated character in str[]
+
+			static char firstRepeating(char str[]) {
+				
+				//create an empty hash set 
+				HashSet<Character> hs = new HashSet<>();
+				
+				// Traverse the input array from left to right
+				
+				for(int i = 0; i<=str.length-1; i++) {
+					char c = str[i];
+
+					// If element is already in hash set, update x and then break
+					
+					if(hs.contains(c))
+						return c;
+				}
+				return '\0';
+			}
+	public static void main(String[] args) {
+		
+		// Driver method to test above method
+		
+		String str ="cbappaleb";
+		char[] arr = str.toCharArray();
+		System.out.println(firstRepeating(arr));
+	}
+
+}

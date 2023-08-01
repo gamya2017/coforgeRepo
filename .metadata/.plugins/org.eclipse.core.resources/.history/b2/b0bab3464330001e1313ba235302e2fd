@@ -1,0 +1,34 @@
+package com.coforge.reverscestring;
+
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ReverseStringApplication {
+
+	public static void main(String[] args) {
+		
+		String number ="1234";
+		System.out.println("Original String:" +number);
+		
+		String reversed =inPlaceReseved("number");
+		System.out.println("Reversed String:" +reversed );
+		
+		
+	}
+	
+	public static String inPlaceReseved(final String input) {
+		
+		final StringBuilder builder = new StringBuilder();
+	    int length = builder.length();
+	    
+	    for(int i=0; i< length/2; i++) {
+	    	final char current = builder.charAt(i);
+	    	final int otherend = length  - i - 1;
+	    	builder.setCharAt(i, builder.charAt(otherend));
+	    	builder.setCharAt(otherend, current);
+	    	
+	    }return builder.toString();
+	}
+
+}

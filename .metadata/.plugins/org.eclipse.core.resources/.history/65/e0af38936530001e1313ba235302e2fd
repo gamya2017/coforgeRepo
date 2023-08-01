@@ -1,0 +1,13 @@
+package com.coforge.java8features;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Java8FeaturesFilterMapforEachLambdaExpApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Java8FeaturesFilterMapforEachLambdaExpApplication.class, args);
+	}
+
+}

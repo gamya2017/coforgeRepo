@@ -1,0 +1,8 @@
+Ans:  
+we first reverse the string or number and compare the reversed string or number with the original value are equal,
+ then the linked list is palindrome; otherwise, not.        
+ 
+                                   Or 
+To check if a linked list is palindrome or not, we need to compare the first element with the last element, 
+the second element with the second last element, the third element with the third last element, etc. 
+If all the comparisons are equal, then the linked list is palindrome; otherwise, not. 
